@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Budget | Wanderly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">wanderly<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Travel Stories</a></li>
+                <li><a href="budget.html">Travel Budget</a></li>
+                <li><a href="survey.html">Visitor Survey</a></li>
+            </ul>
+
+            <a href="login.html" class="nav-button">Sign In</a>
+            <button class="menu-button" id="menuButton" type="button">☰</button>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <p class="section-label">PLAN SMARTER</p>
+            <h1>Plan your travel budget</h1>
+            <p>Organize your expenses and estimate how much your next adventure will cost.</p>
+        </div>
+    </section>
+
+    <main class="budget-page">
+
+        <section class="budget-intro">
+            <p class="section-label">TRAVEL PLANNING</p>
+            <h2>Your trip, your budget</h2>
+            <p>
+                Enter your estimated travel expenses and calculate
+                the total cost of your trip.
+            </p>
+        </section>
+
+        <section class="form-container">
+
+            <form id="budgetForm">
+
+                <div class="form-group">
+                    <label for="tripDestination">Destination</label>
+                    <input type="text" id="tripDestination"
+                        placeholder="e.g. Paris, France" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tripDays">Number of days</label>
+                    <input type="number" id="tripDays"
+                        min="1" max="365" placeholder="e.g. 5" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="travelers">Number of travelers</label>
+                    <input type="number" id="travelers"
+                        min="1" max="50" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="transportCost">Transportation cost (€)</label>
+                    <input type="number" id="transportCost"
+                        min="0" step="0.01" placeholder="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="accommodationCost">Accommodation per night (€)</label>
+                    <input type="number" id="accommodationCost"
+                        min="0" step="0.01" placeholder="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="foodCost">Food per day (€)</label>
+                    <input type="number" id="foodCost"
+                        min="0" step="0.01" placeholder="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="activitiesCost">Activities and entertainment (€)</label>
+                    <input type="number" id="activitiesCost"
+                        min="0" step="0.01" placeholder="0" required>
+                </div>
+
+                <button type="submit" class="form-button">
+                    Calculate My Budget
+                </button>
+
+            </form>
+
+            <div id="budgetResult" class="result-box" aria-live="polite">
+                <h3>Your estimated travel cost</h3>
+                <p>Enter your expenses to calculate your trip budget.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-about">
+                <a href="index.html" class="footer-logo">wanderly.</a>
+                <p>Explore beyond the ordinary. Discover the beauty of the world.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="destination-details.html">Destination Details</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Discover</h3>
+                <a href="blog.html">Travel Stories</a>
+                <a href="budget.html">Travel Budget</a>
+                <a href="survey.html">Visitor Survey</a>
+                <a href="login.html">Sign In</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 WANDERLY. All rights reserved.</p>
+            <p>Made for travel.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

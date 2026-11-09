@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details | Wanderly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">wanderly<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Travel Stories</a></li>
+                <li><a href="budget.html">Travel Budget</a></li>
+                <li><a href="survey.html">Visitor Survey</a></li>
+            </ul>
+
+            <a href="login.html" class="nav-button">Sign In</a>
+
+            <button class="menu-button" id="menuButton" type="button">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <p class="section-label" id="destinationCountry">DISCOVER THE WORLD</p>
+            <h1 id="destinationTitle">Lake Bled</h1>
+            <p id="destinationSubtitle">
+                A beautiful destination surrounded by nature.
+            </p>
+        </div>
+    </section>
+
+    <main class="details-page">
+
+        <section class="details-intro">
+            <p class="section-label">YOUR NEXT ADVENTURE</p>
+            <h2 id="destinationHeading">Discover the beauty of Lake Bled</h2>
+            <p id="destinationDescription">
+                Discover beautiful landscapes and unforgettable experiences.
+            </p>
+        </section>
+
+        <section class="details-gallery" id="destinationGallery">
+            <!-- Destination images will appear here -->
+        </section>
+
+        <section class="travel-information">
+            <h2>Travel information</h2>
+
+            <div class="information-grid">
+
+                <div class="information-item">
+                    <h3>Location</h3>
+                    <p id="destinationLocation">Slovenia</p>
+                </div>
+
+                <div class="information-item">
+                    <h3>Best time to visit</h3>
+                    <p id="destinationSeason">May – September</p>
+                </div>
+
+                <div class="information-item">
+                    <h3>Recommended stay</h3>
+                    <p id="destinationStay">2 – 3 days</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="interaction-section">
+            <h2>Did you like this destination?</h2>
+
+            <div class="reaction-buttons">
+                <button type="button" id="likeButton">
+                    👍 Like <span id="likeCount">0</span>
+                </button>
+
+                <button type="button" id="dislikeButton">
+                    👎 Dislike <span id="dislikeCount">0</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="comments-section">
+            <h2>Share your thoughts</h2>
+            <p id="commentQuestion">
+                Have you visited this destination? Leave a comment!
+            </p>
+
+            <form id="commentForm">
+
+                <label for="commentInput">Your comment</label>
+
+                <textarea
+                    id="commentInput"
+                    rows="4"
+                    placeholder="Write your comment..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="form-button">
+                    Post comment
+                </button>
+
+            </form>
+
+            <div id="commentList" class="comment-list">
+                <p class="empty-comments">
+                    No comments yet. Be the first to comment!
+                </p>
+            </div>
+
+        </section>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="destinations.html" class="form-button">
+                ← Back to destinations
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-about">
+                <a href="index.html" class="footer-logo">wanderly.</a>
+                <p>
+                    Explore beyond the ordinary.
+                    Discover the beauty of the world.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="destination-details.html">Destination Details</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Discover</h3>
+                <a href="blog.html">Travel Stories</a>
+                <a href="budget.html">Travel Budget</a>
+                <a href="survey.html">Visitor Survey</a>
+                <a href="login.html">Sign In</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 WANDERLY. All rights reserved.</p>
+            <p>Made for travel.</p>
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+    <script>
+        const destinations = {
+
+            "swiss-alps": {
+                name: "Swiss Alps",
+                country: "DISCOVER SWITZERLAND",
+                subtitle: "Experience the beauty of the Swiss mountains.",
+                description: "The Swiss Alps are famous for their breathtaking mountain peaks, peaceful villages and beautiful lakes. Visitors can enjoy hiking, skiing and unforgettable views of nature.",
+                location: "Switzerland",
+                season: "June – September",
+                stay: "3 – 5 days",
+                images: [
+                    "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1000",
+                    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900",
+                    "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900"
+                ]
+            },
+
+            "amalfi-coast": {
+                name: "Amalfi Coast",
+                country: "DISCOVER ITALY",
+                subtitle: "Explore the colorful Italian coastline.",
+                description: "The Amalfi Coast is one of Italy's most beautiful coastal regions. It is known for its colorful villages, clear blue sea, delicious Italian food and amazing coastal views.",
+                location: "Southern Italy",
+                season: "May – September",
+                stay: "3 – 4 days",
+                images: [
+                    "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1000",
+                    "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=900",
+                    "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?w=900"
+                ]
+            },
+
+            "lake-bled": {
+                name: "Lake Bled",
+                country: "DISCOVER SLOVENIA",
+                subtitle: "A beautiful destination surrounded by mountains and nature.",
+                description: "Lake Bled is one of Slovenia's most beautiful destinations. Famous for its turquoise water, small island and mountain views, it is a perfect place for nature lovers.",
+                location: "Northwestern Slovenia",
+                season: "May – September",
+                stay: "2 – 3 days",
+                images: [
+                    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000",
+                    "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900",
+                    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900"
+                ]
+            },
+
+            "santorini": {
+                name: "Santorini",
+                country: "DISCOVER GREECE",
+                subtitle: "Enjoy beautiful views and Mediterranean sunsets.",
+                description: "Santorini is a famous Greek island known for its white houses, blue rooftops and incredible sunsets. Visitors can explore charming villages, beaches and traditional Greek restaurants.",
+                location: "Cyclades, Greece",
+                season: "May – October",
+                stay: "3 – 4 days",
+                images: [
+                    "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=1000",
+                    "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=900",
+                    "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=900"
+                ]
+            },
+
+            "austrian-alps": {
+                name: "Austrian Alps",
+                country: "DISCOVER AUSTRIA",
+                subtitle: "Discover peaceful villages and beautiful mountain scenery.",
+                description: "The Austrian Alps offer stunning mountain landscapes, fresh air and charming alpine villages. They are a wonderful destination for hiking, winter sports and relaxing in nature.",
+                location: "Austria",
+                season: "June – September",
+                stay: "3 – 5 days",
+                images: [
+                    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000",
+                    "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900",
+                    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+                ]
+            },
+
+            "kyoto": {
+                name: "Kyoto",
+                country: "DISCOVER JAPAN",
+                subtitle: "Experience traditional Japanese culture and beautiful temples.",
+                description: "Kyoto is known for its traditional streets, peaceful temples, beautiful gardens and Japanese culture. It is a wonderful place to discover historic architecture and local traditions.",
+                location: "Honshu, Japan",
+                season: "March – May and October – November",
+                stay: "3 – 4 days",
+                images: [
+                    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1000",
+                    "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900",
+                    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900"
+                ]
+            }
+
+        };
+
+        const parameters = new URLSearchParams(window.location.search);
+        const selectedPlace = parameters.get("place") || "lake-bled";
+
+        const destination = destinations[selectedPlace] || destinations["lake-bled"];
+
+        document.title = destination.name + " | Wanderly";
+
+        document.getElementById("destinationCountry").textContent = destination.country;
+        document.getElementById("destinationTitle").textContent = destination.name;
+        document.getElementById("destinationSubtitle").textContent = destination.subtitle;
+        document.getElementById("destinationHeading").textContent = "Discover the beauty of " + destination.name;
+        document.getElementById("destinationDescription").textContent = destination.description;
+        document.getElementById("destinationLocation").textContent = destination.location;
+        document.getElementById("destinationSeason").textContent = destination.season;
+        document.getElementById("destinationStay").textContent = destination.stay;
+        document.getElementById("commentQuestion").textContent =
+            "Have you visited " + destination.name + "? Leave a comment!";
+
+        const gallery = document.getElementById("destinationGallery");
+
+        destination.images.forEach(function (image, index) {
+
+            const photo = document.createElement("img");
+
+            photo.src = image;
+            photo.alt = destination.name + " - photo " + (index + 1);
+
+            gallery.appendChild(photo);
+
+        });
+    </script>
+
+</body>
+</html>

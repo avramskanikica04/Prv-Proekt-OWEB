@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Survey | Wanderly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">wanderly<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Travel Stories</a></li>
+                <li><a href="budget.html">Travel Budget</a></li>
+                <li><a href="survey.html">Visitor Survey</a></li>
+            </ul>
+
+            <a href="login.html" class="nav-button">Sign In</a>
+            <button class="menu-button" id="menuButton" type="button">☰</button>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <p class="section-label">YOUR OPINION MATTERS</p>
+            <h1>Help us make travel better</h1>
+            <p>Share your travel preferences and tell us about your experience with Wanderly.</p>
+        </div>
+    </section>
+
+    <main class="survey-page">
+
+        <section class="survey-intro">
+            <p class="section-label">VISITOR SURVEY</p>
+            <h2>We would love to hear from you</h2>
+            <p>
+                Answer a few short questions to help us understand
+                what travelers are looking for.
+            </p>
+        </section>
+
+        <section class="survey-form">
+
+            <form id="surveyForm">
+
+                <div class="survey-group">
+                    <label for="visitorName">Your name</label>
+                    <input type="text" id="visitorName"
+                        placeholder="Enter your name" required>
+                </div>
+
+                <div class="survey-group">
+                    <p>1. How often do you travel?</p>
+
+                    <label>
+                        <input type="radio" name="travelFrequency"
+                            value="Several times a year" required>
+                        Several times a year
+                    </label>
+
+                    <label>
+                        <input type="radio" name="travelFrequency"
+                            value="Once a year">
+                        Once a year
+                    </label>
+
+                    <label>
+                        <input type="radio" name="travelFrequency"
+                            value="Rarely">
+                        Rarely
+                    </label>
+                </div>
+
+                <div class="survey-group">
+                    <p>2. What type of destinations do you prefer?</p>
+
+                    <label>
+                        <input type="radio" name="destinationType"
+                            value="Nature" required>
+                        Nature and mountains
+                    </label>
+
+                    <label>
+                        <input type="radio" name="destinationType"
+                            value="Beach">
+                        Beaches and islands
+                    </label>
+
+                    <label>
+                        <input type="radio" name="destinationType"
+                            value="City">
+                        Cities and culture
+                    </label>
+
+                    <label>
+                        <input type="radio" name="destinationType"
+                            value="Adventure">
+                        Adventure and activities
+                    </label>
+                </div>
+
+                <div class="survey-group">
+                    <p>3. What is most important when planning a trip?</p>
+
+                    <label>
+                        <input type="checkbox" name="travelPriority"
+                            value="Price">
+                        Affordable prices
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="travelPriority"
+                            value="Accommodation">
+                        Comfortable accommodation
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="travelPriority"
+                            value="Activities">
+                        Activities and experiences
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="travelPriority"
+                            value="Location">
+                        Location and attractions
+                    </label>
+                </div>
+
+                <div class="survey-group">
+                    <label for="websiteRating">
+                        4. How would you rate your experience with Wanderly?
+                    </label>
+
+                    <select id="websiteRating" required>
+                        <option value="">Select your rating</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Very good">Very good</option>
+                        <option value="Good">Good</option>
+                        <option value="Needs improvement">Needs improvement</option>
+                    </select>
+                </div>
+
+                <div class="survey-group">
+                    <label for="visitorSuggestions">
+                        5. What would you like to see on our website?
+                    </label>
+
+                    <textarea id="visitorSuggestions" rows="5"
+                        placeholder="Share your ideas and suggestions..."></textarea>
+                </div>
+
+                <button type="submit" class="form-button">
+                    Submit Survey
+                </button>
+
+            </form>
+
+            <div id="surveyMessage" class="form-message" aria-live="polite"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-about">
+                <a href="index.html" class="footer-logo">wanderly.</a>
+                <p>Explore beyond the ordinary. Discover the beauty of the world.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="destination-details.html">Destination Details</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Discover</h3>
+                <a href="blog.html">Travel Stories</a>
+                <a href="budget.html">Travel Budget</a>
+                <a href="survey.html">Visitor Survey</a>
+                <a href="login.html">Sign In</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 WANDERLY. All rights reserved.</p>
+            <p>Made for travel.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
